@@ -1,9 +1,10 @@
 # randomNumberGenerator
 This random number generator is a pseudorandom number generator which is basedon linear congruential generator.
 Which uses the given mathematical formula:-
-    Sn+1=(a*Sn+c)mod m
-    Where a, m and c are fixed integers.
-    Sn+1 is the next integer generated in the series which is generated using a fixed number Sn known as seed.
+
+        Sn+1=(a*Sn+c)mod m
+        Where a, m and c are fixed integers.
+   Sn+1 is the next integer generated in the series which is generated using a fixed number Sn known as seed.
 
 So this formula gives numbers in the range 0 to m-1.
 so that we can generate number in a large range.
@@ -20,12 +21,17 @@ c1 = int(0.27*count) is used to make it an integer and i consider the lower valu
 variable var is set to zero which is used to count number which we store in list and at the end will be equal to "count" variable.
 variable lower and upper are set to zero which are used to count numbers less than middle value and higher than middle value.
 
-Now a while loop is used 
+Now a while loop is used
+
         s=(a*s+c)%m
-        m is set to large integer so it will produce numbers(s) in a large range.
+        
+   m is set to large integer so it will produce numbers(s) in a large range.
+        
         temp=s%last
-        but some times s is out of user's range so we perform modulus operation to set it less than end value and sometimes
-        temp is less than starting value so we add starting value to temp to set it in range if it is lesser than starting value.
+        
+   but some times s is out of user's range so we perform modulus operation to set it less than end value and sometimes
+temp is less than starting value so we add starting value to temp to set it in range if it is lesser than starting value.
+        
         if temp < start:
             temp=temp+start
             
