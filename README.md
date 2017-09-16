@@ -41,8 +41,18 @@ To add a value to list it should satisfy one of two condition.
       (left will increase by 1 if this condition satisfy)
       2.variable right should be lesser than value of "count"-c1 and value of temp should be higher than mid value.
       (right will increase by 1 if this condition satisfies)
-      
       variable var increase by 1 in any of condition satisfy.
+      
+      if ((temp <= mid) and (lower < c1)):
+            lower=lower+1
+            var=var+1
+            values.insert(var,temp)
+     
+     elif ((temp > mid) and (upper < count-c1)):
+            upper=upper+1
+            var=var+1
+            values.insert(var,temp)
+            
 while loop terminates when both the conditions are false.(left greater than c1 and right greater than count-c1)
 
 
