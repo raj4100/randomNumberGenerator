@@ -4,7 +4,7 @@ import math
 def seed():
     return int(time.time())
 
-def random_number(start=0,last=1,count=1):
+def random_number(start,last,count):
     s = seed()   
     m = 1
     c = 11
